@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "AL.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AL.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AL.Aplicacion.dll": {}
+        }
+      },
+      "AL.Repositorios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AL.Aplicacion": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AL.Repositorios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AL.Repositorios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AL.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../AL.Aplicacion/AL.Aplicacion.csproj",
+      "msbuildProject": "../AL.Aplicacion/AL.Aplicacion.csproj"
+    },
+    "AL.Repositorios/1.0.0": {
+      "type": "project",
+      "path": "../AL.Repositorios/AL.Repositorios.csproj",
+      "msbuildProject": "../AL.Repositorios/AL.Repositorios.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "AL.Aplicacion >= 1.0.0",
+      "AL.Repositorios >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Nicol\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\AL.UI.csproj",
+      "projectName": "AL.UI",
+      "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\AL.UI.csproj",
+      "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj"
+            },
+            "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj": {
+              "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
