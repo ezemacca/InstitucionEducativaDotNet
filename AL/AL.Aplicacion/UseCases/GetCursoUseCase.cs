@@ -1,5 +1,5 @@
-// using AL.Aplicacion.Entidades;
-// using AL.Aplicacion.Interfaces;
+using AL.Aplicacion.Entidades;
+using AL.Aplicacion.Interfaces;
 
 namespace AL.Aplicacion.UseCases;
 // public class GetCursoUseCase

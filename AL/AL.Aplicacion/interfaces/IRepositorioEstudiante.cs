@@ -10,6 +10,6 @@ public interface IRepositorioEstudiante
 
     List<Estudiante> EstudiantesCursandoActualmente();
 
-    List<Estudiante> EstudiantesConCursosFinalizados();
+    List<Estudiante> EstudiantesConUnCursoFinalizado();
 
 }

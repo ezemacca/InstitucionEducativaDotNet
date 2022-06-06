@@ -8,6 +8,6 @@ public interface IRepositorioInscripcion
     void EliminarInscripcion(Inscripcion Inscripcion);
     void AgregarInscripcion(Inscripcion Inscripcion);
 
-
+    
 
 }
