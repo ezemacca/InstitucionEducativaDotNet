@@ -3,12 +3,13 @@ using AL.Aplicacion.Entidades;
 
 public interface IRepositorioEstudiante
 {
-    List<Estudiante> GetEstudiantes();
+    /* Dado un id de curso, devuelve los estudiantes inscriptos en ese curso*/
+    List<Estudiante> GetEstudiantes(int id_curso);
+    Estudiante? GetEstudiante(int id);
     void ModificarEstudiante(Estudiante estudiante);
     void EliminarEstudiante(Estudiante estudiante);
     void AgregarEstudiante(Estudiante estudiante);
 
-    List<Estudiante> EstudiantesCursandoActualmente();
 
     List<Estudiante> EstudiantesConUnCursoFinalizado();
 

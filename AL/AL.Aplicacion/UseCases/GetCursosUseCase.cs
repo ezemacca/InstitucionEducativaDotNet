@@ -2,17 +2,15 @@ using AL.Aplicacion.Entidades;
 using AL.Aplicacion.Interfaces;
 
 namespace AL.Aplicacion.UseCases;
-public class AgregarCursoUseCase
+public class GetCursosUseCase
 {
-
     private readonly IRepositorioCurso _rCurso;
-    public AgregarCursoUseCase(IRepositorioCurso rCurso)
+    public GetCursosUseCase(IRepositorioCurso rCurso)
     {
         _rCurso = rCurso;
     }
-    public void  Ejecutar(Curso UnCurso)
+    public  List<Curso> Ejecutar(int id)
     {
-        _rCurso.AgregarCurso(UnCurso);
-    
+        return _rCurso.GetCursos(id);
     }
 }

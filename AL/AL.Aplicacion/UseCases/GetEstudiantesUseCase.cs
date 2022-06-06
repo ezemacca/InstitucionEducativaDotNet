@@ -2,15 +2,15 @@ using AL.Aplicacion.Entidades;
 using AL.Aplicacion.Interfaces;
 
 namespace AL.Aplicacion.UseCases;
-public class GetEstudianteUseCase
+public class GetEstudiantesUseCase
 {
     private readonly IRepositorioEstudiante _rEstudiante;
-    public GetEstudianteUseCase(IRepositorioEstudiante rEstudiante)
+    public GetEstudiantesUseCase(IRepositorioEstudiante rEstudiante)
     {
         _rEstudiante = rEstudiante;
     }
-    public  Estudiante Ejecutar(int id)
+    public  List<Estudiante> Ejecutar(int id_curso)
     {
-        return _rEstudiante.GetEstudiante(id);
+        return _rEstudiante.GetEstudiantes(id_curso);
     }
 }
