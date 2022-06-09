@@ -6,6 +6,7 @@ public class RepositorioCurso : IRepositorioCurso
 
     public void AgregarCurso(Curso curso) 
     {
+        
 
     }
     public void EliminarCurso(int id) 
@@ -23,7 +24,17 @@ public class RepositorioCurso : IRepositorioCurso
         throw new NotImplementedException();
     }
 
+    public Curso? GetCurso(int idCurso)
+    {
+        throw new NotImplementedException();
+    }
+
     public List<Curso> GetCursos()
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Curso> GetCursos(int id_estudiante)
     {
         throw new NotImplementedException();
     }

@@ -18,6 +18,16 @@ public class RepositorioInscripcion : IRepositorioInscripcion
         throw new NotImplementedException();
     }
 
+    public Inscripcion? GetInscripcion(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Inscripcion> GetInscripciones()
+    {
+        throw new NotImplementedException();
+    }
+
     public void ModificarInscripcion(Inscripcion Inscripcion)
     {
         throw new NotImplementedException();
