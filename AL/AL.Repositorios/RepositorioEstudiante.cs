@@ -5,6 +5,7 @@ public class RepositorioEstudiante : IRepositorioEstudiante
 {
     public void AgregarEstudiante(Estudiante estudiante)
     {
+        
         throw new NotImplementedException();
     }
 
@@ -23,7 +24,17 @@ public class RepositorioEstudiante : IRepositorioEstudiante
         throw new NotImplementedException();
     }
 
+    public Estudiante? GetEstudiante(int id)
+    {
+        throw new NotImplementedException();
+    }
+
     public List<Estudiante> GetEstudiantes()
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Estudiante> GetEstudiantes(int id_curso)
     {
         throw new NotImplementedException();
     }

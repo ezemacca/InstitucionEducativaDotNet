@@ -12,6 +12,5 @@ public class EliminarInscripcionUseCase
     public void  Ejecutar(Inscripcion UnaInscripcion)
     {
         _rInscripcion.EliminarInscripcion(UnaInscripcion);
-
     }
 }
