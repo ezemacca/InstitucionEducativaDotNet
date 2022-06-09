@@ -6,6 +6,12 @@ using AL.UI.Data;
 using AL.Repositorios;
 using AL.Aplicacion.UseCases;
 using AL.Aplicacion.Interfaces;
+using AL.Aplicacion.Entidades;
+
+using (var context = new InstitucionEducativaContext())
+{
+    context.Database.EnsureCreated();
+}
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +40,7 @@ builder.Services.AddScoped<IRepositorioCurso, RepositorioCurso>();
 builder.Services.AddScoped<IRepositorioEstudiante, RepositorioEstudiante>();
 builder.Services.AddScoped<IRepositorioInscripcion, RepositorioInscripcion>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -41,6 +48,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
 }
+
+
 
 
 app.UseStaticFiles();
