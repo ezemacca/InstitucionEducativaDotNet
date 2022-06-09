@@ -8,6 +8,6 @@ public class Curso
     public DateOnly FechaInicio{get;set;}
     public DateOnly FechaFin{get;set;}
 
-
+    public List<Inscripcion> Inscripciones {get;set;}
 
 }

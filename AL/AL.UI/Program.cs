@@ -30,8 +30,9 @@ builder.Services.AddTransient<EliminarInscripcionUseCase>();
 builder.Services.AddTransient<ModificarInscripcionUseCase>();
 builder.Services.AddTransient<GetInscripcionUseCase>();
 
-
-
+builder.Services.AddScoped<IRepositorioCurso, RepositorioCurso>();
+builder.Services.AddScoped<IRepositorioEstudiante, RepositorioEstudiante>();
+builder.Services.AddScoped<IRepositorioInscripcion, RepositorioInscripcion>();
 
 var app = builder.Build();
 
