@@ -12,7 +12,7 @@ public ModificarCursoUseCase(IRepositorioCurso rCurso)
 
 public void Ejecutar (Curso curso)
 {   
-    _rCurso.ModificarCurso(curso);s
+    _rCurso.ModificarCurso(curso);
 }
 
 }
