@@ -1,0 +1,57 @@
+@page "/verEstudiantes"
+
+<PageTitle>VerEstudiantes</PageTitle>
+
+@* @inject GetEstudianteUseCase VerEstudiante *@
+@inject AgregarEstudianteUseCase AgregarEstudiante 
+
+@inject ModificarEstudianteUseCase ModificarEstudiante 
+@inject EliminarEstudianteUseCase EliminarEstudiante 
+
+
+<h1>Estudiantes: </h1>
+<table class="table">
+
+<td>
+    <button class="btn btn-success"> Agregar Nuevo Estudiante</button>
+</td>
+<td>
+    <a href="listadoEstudiantesCursando"><button class="btn btn-primary"> Ver estudiantes aun cursando</button></a>
+</td>
+<td>
+    <a href="listadoEstudiantesCursoFinalizado"><button class="btn btn-primary" > Ver estudiantes con cursos finalizados</button></a>
+</td>
+
+</table>
+ <table class="table">
+        <thead>
+            <tr>
+                <th>DNI</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Mail</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* @foreach (var Estudiante in Estudiantes) *@
+             @* {  *@
+                <tr>
+                     <td>Estudiante.DNI</td>
+                    <td>Estudiante.Nombre</td>
+                    <td>Estudiante.Apellido</td>
+                    <td>Estudiante.Mail</td> 
+                    <td><button class="btn btn-primary btn-xs" >Ver Estudiante </button>
+                        <button class="btn btn-primary btn-xs" >Ver cursos </button>
+                        <button class="btn btn-info btn-xs">Modificar Estudiante</button>
+                        <button class="btn btn-danger btn-xs" >Eliminar Estudiante</button>
+                    </td> 
+                </tr>
+                 @* @onclick="()=>AgregarEstudiante.Ejecutar(Estudiante.id)" *@
+
+                @* DENTRO DE LOS BOTONES *@
+                 @* @onclick="()=>ModificarEstudiante.Ejecutar(Estudiante.id)" *@
+                @* @onclick="()=>EliminarEstudiante.Ejecutar(Estudiante.id)" *@
+            @* }  *@
+        </tbody>
+    </table>

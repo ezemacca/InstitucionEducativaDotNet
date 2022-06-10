@@ -10,9 +10,8 @@ public class AgregarCursoUseCase
     {
         _rCurso = rCurso;
     }
-    public void  Ejecutar(Curso UnCurso)
+    public void Ejecutar(Curso UnCurso)
     {
         _rCurso.AgregarCurso(UnCurso);
-    
     }
 }

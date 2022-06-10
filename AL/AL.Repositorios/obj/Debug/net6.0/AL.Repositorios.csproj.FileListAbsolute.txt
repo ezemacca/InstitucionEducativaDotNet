@@ -13,3 +13,33 @@ C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Repositorios\ob
 C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Repositorios\obj\Debug\net6.0\refint\AL.Repositorios.dll
 C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.pdb
 C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Repositorios\obj\Debug\net6.0\ref\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\bin\Debug\net6.0\AL.Repositorios.deps.json
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\bin\Debug\net6.0\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\bin\Debug\net6.0\AL.Repositorios.pdb
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\bin\Debug\net6.0\AL.Aplicacion.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\bin\Debug\net6.0\AL.Aplicacion.pdb
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.csproj.AssemblyReference.cache
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.AssemblyInfoInputs.cache
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.AssemblyInfo.cs
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.csproj.CopyComplete
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\refint\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.pdb
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Repositorios\obj\Debug\net6.0\ref\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\bin\Debug\net6.0\AL.Repositorios.deps.json
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\bin\Debug\net6.0\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\bin\Debug\net6.0\AL.Repositorios.pdb
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\bin\Debug\net6.0\AL.Aplicacion.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\bin\Debug\net6.0\AL.Aplicacion.pdb
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.csproj.AssemblyReference.cache
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.AssemblyInfoInputs.cache
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.AssemblyInfo.cs
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.csproj.CopyComplete
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\refint\AL.Repositorios.dll
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\AL.Repositorios.pdb
+C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Repositorios\obj\Debug\net6.0\ref\AL.Repositorios.dll

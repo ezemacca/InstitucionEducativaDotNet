@@ -1,0 +1,45 @@
+@page "/verInscripciones"
+
+<PageTitle>VerInscripcions</PageTitle>
+
+@* @inject GetInscripcionUseCase VerInscripcion *@
+@inject AgregarInscripcionUseCase AgregarInscripcion 
+
+@inject ModificarInscripcionUseCase ModificarInscripcion 
+@inject EliminarInscripcionUseCase EliminarInscripcion 
+
+
+<h1>Inscripciones: </h1>
+
+<button class="btn btn-success"> Agregar Nueva Inscripcion</button>
+
+ <table class="table">
+        <thead>
+            <tr>
+                <th>FechaInscripcion</th>
+                <th>Curso</th>
+                <th>Estudiante</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* @foreach (var Inscripcion in Inscripciones) *@
+             @* {  *@
+                <tr>
+
+                     <td>Inscripcion.FechaInscripcion</td>
+                    <td> Inscripcion.Curso</td>
+                    <td>Inscripcion.Estudiante</td>
+                    <td><button class="btn btn-primary" >Ver Inscripcion </button>
+                        <button class="btn btn-info">Modificar Inscripcion</button>
+                        <button class="btn btn-danger" >Eliminar Inscripcion</button>
+                    </td> 
+                </tr>
+                 @* @onclick="()=>AgregarInscripcion.Ejecutar(Inscripcion.id)" *@
+
+                @* DENTRO DE LOS BOTONES *@
+                 @* @onclick="()=>ModificarInscripcion.Ejecutar(Inscripcion.id)" *@
+                @* @onclick="()=>EliminarInscripcion.Ejecutar(Inscripcion.id)" *@
+            @* }  *@
+        </tbody>
+    </table>

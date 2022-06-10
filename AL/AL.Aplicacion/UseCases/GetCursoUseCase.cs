@@ -7,11 +7,10 @@ public class GetCursoUseCase
     private readonly IRepositorioCurso _rCurso;
     public GetCursoUseCase(IRepositorioCurso rCurso)
     {
-        _rCurso = rCurso;
+    _rCurso = rCurso;
     }
     public Curso Ejecutar(int id)
     {
         return _rCurso.GetCurso(id);
     }
-
 }

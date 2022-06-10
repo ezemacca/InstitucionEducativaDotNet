@@ -4,11 +4,16 @@ namespace AL.Repositorios;
 public class RepositorioCurso : IRepositorioCurso
 {
 
-    public void AgregarCurso(Curso curso) 
+    public void AgregarCurso(Curso unCurso)
     {
-        
-
+        using (var context = new InstitucionEducativaContext())
+        {
+            context.Database.EnsureCreated();
+            context.Add(unCurso);
+            context.SaveChanges();
+        }
     }
+
     public void EliminarCurso(int id) 
     {
 

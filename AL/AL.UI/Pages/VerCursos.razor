@@ -1,0 +1,47 @@
+@page "/verCursos"
+
+<PageTitle>VerCursos</PageTitle>
+
+@* @inject GetCursoUseCase VerCurso *@
+@inject AgregarCursoUseCase AgregarCurso 
+
+@inject ModificarCursoUseCase ModificarCurso 
+@inject EliminarCursoUseCase EliminarCurso 
+
+
+<h1>Cursos: </h1>
+
+<button class="btn btn-success"> Agregar Nuevo Curso</button>
+
+ <table class="table">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>FechaInicio</th>
+                <th>FechaFin</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @* @foreach (var curso in cursos) *@
+             @* {  *@
+                <tr>
+                     <td>curso.Titulo</td>
+                    <td>curso.Descripcion</td>
+                    <td>curso.FechaInicio</td>
+                    <td>curso.FechaFin</td> 
+                    <td><button class="btn btn-primary" >Ver Curso </button>
+                        <button class="btn btn-primary" >Ver Estudiantes</button>
+                        <button class="btn btn-info">Modificar Curso</button>
+                        <button class="btn btn-danger" >Eliminar Curso</button>
+                    </td> 
+                </tr>
+                 @* @onclick="()=>AgregarCurso.Ejecutar(curso.id)" *@
+
+                @* DENTRO DE LOS BOTONES *@
+                 @* @onclick="()=>ModificarCurso.Ejecutar(curso.id)" *@
+                @* @onclick="()=>EliminarCurso.Ejecutar(curso.id)" *@
+            @* }  *@
+        </tbody>
+    </table>
