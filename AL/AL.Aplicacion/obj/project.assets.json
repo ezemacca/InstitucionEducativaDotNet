@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicol\\Desktop\\InstitucionEducativaDotNet-Version Base de datos bien\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
       "projectName": "AL.Aplicacion",
-      "projectPath": "C:\\Users\\Nicol\\Desktop\\InstitucionEducativaDotNet-Version Base de datos bien\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
+      "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
       "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicol\\Desktop\\InstitucionEducativaDotNet-Version Base de datos bien\\AL\\AL.Aplicacion\\obj\\",
+      "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"

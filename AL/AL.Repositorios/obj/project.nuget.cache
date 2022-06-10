@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lu3iOKNUL7lKhrrMK6LHJ8BtIV4YdyCHgzVH9brGOC6LHZAB9RuEjHd1t3QFWDYaFDRn5KaTedJy9JKHUGhSCQ==",
+  "dgSpecHash": "DCa0kXPAwkUFWpaHuTgxCMqeWM0+xxG2bH0sJk44qQ7/bpaqfX4Iw6WnNs+aDczjo+37ykLi0sGn/gNkCyzByA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicol\\Desktop\\InstitucionEducativaDotNet-Version Base de datos bien\\AL\\AL.Repositorios\\AL.Repositorios.csproj",
+  "projectFilePath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.5\\microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
