@@ -4,7 +4,8 @@ using AL.UI.Data;
 
 //Directivas using
 using AL.Repositorios;
-using AL.Aplicacion.Entidades;
+
+// using AL.Aplicacion.Entidades;
 using AL.Aplicacion.UseCases;
 using AL.Aplicacion.Interfaces;
 

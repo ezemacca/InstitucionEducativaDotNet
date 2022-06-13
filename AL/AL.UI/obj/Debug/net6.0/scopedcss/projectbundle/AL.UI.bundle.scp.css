@@ -1,19 +1,19 @@
 /* _content/AL.UI/Shared/MainLayout.razor.rz.scp.css */
-.page[b-p15pbsciya] {
+.page[b-4fmoa8k85s] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-p15pbsciya] {
+main[b-4fmoa8k85s] {
     flex: 1;
 }
 
-.sidebar[b-p15pbsciya] {
+.sidebar[b-4fmoa8k85s] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-p15pbsciya] {
+.top-row[b-4fmoa8k85s] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -22,88 +22,88 @@ main[b-p15pbsciya] {
     align-items: center;
 }
 
-    .top-row[b-p15pbsciya]  a, .top-row .btn-link[b-p15pbsciya] {
+    .top-row[b-4fmoa8k85s]  a, .top-row .btn-link[b-4fmoa8k85s] {
         white-space: nowrap;
         margin-left: 1.5rem;
     }
 
-    .top-row a:first-child[b-p15pbsciya] {
+    .top-row a:first-child[b-4fmoa8k85s] {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-p15pbsciya] {
+    .top-row:not(.auth)[b-4fmoa8k85s] {
         display: none;
     }
 
-    .top-row.auth[b-p15pbsciya] {
+    .top-row.auth[b-4fmoa8k85s] {
         justify-content: space-between;
     }
 
-    .top-row a[b-p15pbsciya], .top-row .btn-link[b-p15pbsciya] {
+    .top-row a[b-4fmoa8k85s], .top-row .btn-link[b-4fmoa8k85s] {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-p15pbsciya] {
+    .page[b-4fmoa8k85s] {
         flex-direction: row;
     }
 
-    .sidebar[b-p15pbsciya] {
+    .sidebar[b-4fmoa8k85s] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-p15pbsciya] {
+    .top-row[b-4fmoa8k85s] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row[b-p15pbsciya], article[b-p15pbsciya] {
+    .top-row[b-4fmoa8k85s], article[b-4fmoa8k85s] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
 /* _content/AL.UI/Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-1o6ufadtpc] {
+.navbar-toggler[b-8lx0s4e4jr] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-1o6ufadtpc] {
+.top-row[b-8lx0s4e4jr] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-1o6ufadtpc] {
+.navbar-brand[b-8lx0s4e4jr] {
     font-size: 1.1rem;
 }
 
-.oi[b-1o6ufadtpc] {
+.oi[b-8lx0s4e4jr] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
-.nav-item[b-1o6ufadtpc] {
+.nav-item[b-8lx0s4e4jr] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-1o6ufadtpc] {
+    .nav-item:first-of-type[b-8lx0s4e4jr] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-1o6ufadtpc] {
+    .nav-item:last-of-type[b-8lx0s4e4jr] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-1o6ufadtpc]  a {
+    .nav-item[b-8lx0s4e4jr]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -112,22 +112,22 @@ main[b-p15pbsciya] {
         line-height: 3rem;
     }
 
-.nav-item[b-1o6ufadtpc]  a.active {
+.nav-item[b-8lx0s4e4jr]  a.active {
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
-.nav-item[b-1o6ufadtpc]  a:hover {
+.nav-item[b-8lx0s4e4jr]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-1o6ufadtpc] {
+    .navbar-toggler[b-8lx0s4e4jr] {
         display: none;
     }
 
-    .collapse[b-1o6ufadtpc] {
+    .collapse[b-8lx0s4e4jr] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }

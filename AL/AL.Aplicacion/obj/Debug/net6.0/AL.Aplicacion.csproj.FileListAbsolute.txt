@@ -1,36 +1,12 @@
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.csproj.AssemblyReference.cache
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.AssemblyInfoInputs.cache
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.AssemblyInfo.cs
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.csproj.CoreCompileInputs.cache
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.deps.json
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.dll
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.pdb
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.dll
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\refint\AL.Aplicacion.dll
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.pdb
-C:\Users\Nicol\Documents\GitHub\InstitucionEducativaDotNet\AL\AL.Aplicacion\obj\Debug\net6.0\ref\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.deps.json
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.pdb
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.csproj.AssemblyReference.cache
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.AssemblyInfoInputs.cache
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.AssemblyInfo.cs
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.csproj.CoreCompileInputs.cache
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\refint\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.pdb
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-e7eddff5c67e51b92e0b6edeff7021dcfe55c4d8\AL\AL.Aplicacion\obj\Debug\net6.0\ref\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.deps.json
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\bin\Debug\net6.0\AL.Aplicacion.pdb
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.csproj.AssemblyReference.cache
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.AssemblyInfoInputs.cache
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.AssemblyInfo.cs
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.csproj.CoreCompileInputs.cache
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\refint\AL.Aplicacion.dll
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\AL.Aplicacion.pdb
-C:\Users\Nicol\Desktop\InstitucionEducativaDotNet-Version Base de datos bien\AL\AL.Aplicacion\obj\Debug\net6.0\ref\AL.Aplicacion.dll
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/bin/Debug/net6.0/AL.Aplicacion.deps.json
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/bin/Debug/net6.0/AL.Aplicacion.dll
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/bin/Debug/net6.0/AL.Aplicacion.pdb
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.csproj.AssemblyReference.cache
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.AssemblyInfoInputs.cache
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.AssemblyInfo.cs
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.csproj.CoreCompileInputs.cache
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.dll
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/refint/AL.Aplicacion.dll
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.pdb
+/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/Debug/net6.0/ref/AL.Aplicacion.dll

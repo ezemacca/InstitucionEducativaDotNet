@@ -1,6 +1,7 @@
+namespace AL.Repositorios;
+
 using AL.Aplicacion.Entidades;
 using AL.Aplicacion.Interfaces;
-namespace AL.Repositorios;
 public class RepositorioCurso : IRepositorioCurso
 {
 
@@ -9,8 +10,8 @@ public class RepositorioCurso : IRepositorioCurso
         using (var context = new InstitucionEducativaContext())
         {
             context.Database.EnsureCreated();
-            context.Add(unCurso);
-            context.SaveChanges();
+            // context.Add(unCurso);
+            // context.SaveChanges();
         }
     }
 
