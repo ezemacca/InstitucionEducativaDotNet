@@ -8,5 +8,5 @@ public class Estudiante
     public string Apellido {get;set;}="";
     public string Mail {get;set;}="";
 
-    public List<Inscripcion> Inscripciones {get;set;}
+    public List<Inscripcion>? Inscripciones {get;set;}
 }

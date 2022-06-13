@@ -9,9 +9,9 @@ public class EliminarEstudianteUseCase
     {
         _rEstudiante = rEstudiante;
     }
-    public void  Ejecutar(Estudiante UnEstudiante)
+    public void  Ejecutar(int id_estudiante)
     {
-        _rEstudiante.EliminarEstudiante(UnEstudiante);
+        _rEstudiante.EliminarEstudiante(id_estudiante);
 
     }
 }

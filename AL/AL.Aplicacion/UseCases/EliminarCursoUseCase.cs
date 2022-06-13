@@ -9,8 +9,9 @@ public class EliminarCursoUseCase
     {
         _rCurso = rCurso;
     }
-    public void  Ejecutar(Curso UnCurso)
+    // Para eliminar sólo necesitamos el id del curso
+    public void  Ejecutar(int id_curso)
     {
-        _rCurso.EliminarCurso(UnCurso);
+        _rCurso.EliminarCurso(id_curso);
     }
 }

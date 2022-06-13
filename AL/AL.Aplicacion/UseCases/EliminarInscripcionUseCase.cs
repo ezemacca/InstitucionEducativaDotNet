@@ -9,8 +9,8 @@ public class EliminarInscripcionUseCase
     {
         _rInscripcion = rInscripcion;
     }
-    public void  Ejecutar(Inscripcion UnaInscripcion)
+    public void  Ejecutar(int id_inscripcion)
     {
-        _rInscripcion.EliminarInscripcion(UnaInscripcion);
+        _rInscripcion.EliminarInscripcion(id_inscripcion);
     }
 }

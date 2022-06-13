@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wRq/ex19+gPXWcQPIEpKlgoAbEljfuO/ZK/9K+yHZKrI1OWb2HawiEw5lqHFlnC/xe3eKrdu0HBrlTtM3eqUuA==",
+  "dgSpecHash": "QQRy9OFyywUdBfmJRsQAKo8ret6eeZQvSG3ZKaFAdvzo3TG6QC5vQN/Uz0+FI8ZpNJyq8h2qlWvLefd/38fxSQ==",
   "success": true,
-  "projectFilePath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj",
+  "projectFilePath": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.Repositorios/AL.Repositorios.csproj",
   "expectedPackageFiles": [
     "/Users/ezequielmacca/.nuget/packages/microsoft.data.sqlite.core/6.0.5/microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
