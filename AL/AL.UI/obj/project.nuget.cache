@@ -1,9 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "dPape8FLlgrNVzrfkvbggQD8MHJyAB18b+coIhl9+DHVaA0jLZLqcYNemI5x6K0xFj19FL+krZdoCry2/Jsx5A==",
+  "dgSpecHash": "VcvqYCrjBR5t3AmBaIfzTEMxG6jeFhic6Bdmb118+3Tnqmhkrz9hW+j0qDTZTJTMmjwPfjJyu4yKPnDnl/0kbg==",
   "success": true,
   "projectFilePath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj",
   "expectedPackageFiles": [
+    "/Users/ezequielmacca/.nuget/packages/microsoft.aspnetcore.mvc.razor.extensions/6.0.6/microsoft.aspnetcore.mvc.razor.extensions.6.0.6.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.aspnetcore.mvc.razor.runtimecompilation/6.0.6/microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.6.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.6/microsoft.aspnetcore.razor.language.6.0.6.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.2/microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.codeanalysis.common/4.0.0/microsoft.codeanalysis.common.4.0.0.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.codeanalysis.csharp/4.0.0/microsoft.codeanalysis.csharp.4.0.0.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.codeanalysis.razor/6.0.6/microsoft.codeanalysis.razor.6.0.6.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.data.sqlite.core/6.0.5/microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.5/microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
@@ -21,6 +28,7 @@
     "/Users/ezequielmacca/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/microsoft.netcore.platforms/2.1.2/microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.6/sqlitepclraw.bundle_e_sqlite3.2.0.6.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
@@ -29,9 +37,12 @@
     "/Users/ezequielmacca/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/system.reflection.metadata/5.0.0/system.reflection.metadata.5.0.0.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/system.text.encoding.codepages/4.5.1/system.text.encoding.codepages.4.5.1.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
-    "/Users/ezequielmacca/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512"
+    "/Users/ezequielmacca/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512",
+    "/Users/ezequielmacca/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

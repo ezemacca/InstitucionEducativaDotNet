@@ -12,72 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1094718508,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Pages.Counter",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -2028198268,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Pages.Counter",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AL.UI.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 402539782,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Pages.FetchData",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1679174835,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Pages.FetchData",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AL.UI.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -374474217,
         "Kind": "Components.Component",
         "Name": "AL.UI.Pages.ListadoEstudiantesCursoFinalizado",
@@ -217,39 +151,6 @@
         }
       },
       {
-        "HashCode": 1299078082,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Pages.Index",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -728690549,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Pages.Index",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AL.UI.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1229117938,
         "Kind": "Components.Component",
         "Name": "AL.UI.Pages.VerCursos",
@@ -382,6 +283,125 @@
         }
       },
       {
+        "HashCode": -449232519,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Pages.verCursosEstudiante",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "verCursosEstudiante"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Pages.verCursosEstudiante"
+        }
+      },
+      {
+        "HashCode": -1926994726,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Pages.verCursosEstudiante",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AL.UI.Pages.verCursosEstudiante"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Pages.verCursosEstudiante",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 402539782,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Pages.FetchData",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -1679174835,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Pages.FetchData",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AL.UI.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1094718508,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Pages.Counter",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -2028198268,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Pages.Counter",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AL.UI.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 320750962,
         "Kind": "Components.Component",
         "Name": "AL.UI.Pages.AgregarInscripcion",
@@ -435,88 +455,35 @@
         }
       },
       {
-        "HashCode": 387801152,
+        "HashCode": 1299078082,
         "Kind": "Components.Component",
-        "Name": "AL.UI.App",
+        "Name": "AL.UI.Pages.Index",
         "AssemblyName": "AL.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.App"
+          "Common.TypeName": "AL.UI.Pages.Index"
         }
       },
       {
-        "HashCode": -1090433576,
+        "HashCode": -728690549,
         "Kind": "Components.Component",
-        "Name": "AL.UI.App",
+        "Name": "AL.UI.Pages.Index",
         "AssemblyName": "AL.UI",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AL.UI.App"
+            "TagName": "AL.UI.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -540819118,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Shared.SurveyPrompt",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 1961019466,
-        "Kind": "Components.Component",
-        "Name": "AL.UI.Shared.SurveyPrompt",
-        "AssemblyName": "AL.UI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AL.UI.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "AL.UI.Shared.SurveyPrompt",
+          "Common.TypeName": "AL.UI.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -617,6 +584,59 @@
         }
       },
       {
+        "HashCode": -540819118,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Shared.SurveyPrompt",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 1961019466,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.Shared.SurveyPrompt",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AL.UI.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -196169178,
         "Kind": "Components.Component",
         "Name": "AL.UI.Shared.NavMenu",
@@ -646,6 +666,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "AL.UI.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 387801152,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.App",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.App"
+        }
+      },
+      {
+        "HashCode": -1090433576,
+        "Kind": "Components.Component",
+        "Name": "AL.UI.App",
+        "AssemblyName": "AL.UI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AL.UI.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "AL.UI.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
