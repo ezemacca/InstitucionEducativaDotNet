@@ -1,0 +1,46 @@
+@page "/verCursosEstudiante/{id:int}"
+
+@inject NavigationManager Navegador
+@inject GetEstudianteUseCase GetEstudianteUseCase
+@inject GetCursosInscriptosUseCase GetCursosInscriptosUseCase
+
+
+ <table class="table">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Fin</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var curso in _cursos)
+             { 
+                <tr>
+                    <td>@curso.Titulo</td>
+                    <td>@curso.Descripcion</td>
+                    <td>@curso.FechaInicio</td>
+                    <td>@curso.FechaFin</td> 
+                   
+                </tr>
+
+                @* DENTRO DE LOS BOTONES *@
+                 @* @onclick="()=>ModificarEstudiante.Ejecutar(Estudiante.id)" *@
+                @* @onclick="()=>EliminarEstudiante.Ejecutar(Estudiante.id)" *@
+            } 
+        </tbody>
+        
+    </table>
+
+
+@code
+{
+   [Parameter] public int id {get; set;}
+
+    List<Curso> _cursos = new List<Curso>();
+    protected override void OnInitialized()
+    {     
+        _cursos = GetCursosInscriptosUseCase.Ejecutar(id);
+    }
+}

@@ -46,10 +46,12 @@ public class RepositorioEstudiante : IRepositorioEstudiante
         }
     }
 
-    public List<Estudiante> GetEstudiantes(int id_curso)
+    public List<Estudiante> GetEstudiantes()
     {
+        
         using(var context = new InstitucionEducativaContext())
         {
+            context.Database.EnsureCreated();
             return context.Estudiantes.Include(e => e.Inscripciones).ToList();
         }
     }

@@ -2,16 +2,16 @@
 
 <PageTitle>VerInscripcions</PageTitle>
 
-@* @inject GetInscripcionUseCase VerInscripcion *@
+@inject GetInscripcionesUseCase GetInscripcionesUseCase
 @inject AgregarInscripcionUseCase AgregarInscripcion 
-
 @inject ModificarInscripcionUseCase ModificarInscripcion 
 @inject EliminarInscripcionUseCase EliminarInscripcion 
+@inject NavigationManager Navegador
 
 
 <h1>Inscripciones: </h1>
 
-<button class="btn btn-success"> Agregar Nueva Inscripcion</button>
+<button class="btn btn-success" @onclick="()=>agregarInscripcion()"> Agregar Nueva Inscripcion</button>
 
  <table class="table">
         <thead>
@@ -23,8 +23,8 @@
             </tr>
         </thead>
         <tbody>
-            @* @foreach (var Inscripcion in Inscripciones) *@
-             @* {  *@
+            @foreach (var Inscripcion in _inscripciones)
+             { 
                 <tr>
 
                      <td>Inscripcion.FechaInscripcion</td>
@@ -35,11 +35,27 @@
                         <button class="btn btn-danger" >Eliminar Inscripcion</button>
                     </td> 
                 </tr>
-                 @* @onclick="()=>AgregarInscripcion.Ejecutar(Inscripcion.id)" *@
+                 
 
                 @* DENTRO DE LOS BOTONES *@
                  @* @onclick="()=>ModificarInscripcion.Ejecutar(Inscripcion.id)" *@
                 @* @onclick="()=>EliminarInscripcion.Ejecutar(Inscripcion.id)" *@
-            @* }  *@
+            } 
         </tbody>
     </table>
+
+@code{
+     List<Inscripcion> _inscripciones = new List<Inscripcion>();
+     protected override void OnInitialized()
+    {     
+        _inscripciones = GetInscripcionesUseCase.Ejecutar();
+    }
+    void verCursosDelEstudiante(int id_estudiante){
+        
+        Navegador.NavigateTo($"verCursosEstudiante/{id_estudiante}");
+    }
+
+    void agregarInscripcion(){
+        Navegador.NavigateTo($"agregarInscripcion");
+    }
+}

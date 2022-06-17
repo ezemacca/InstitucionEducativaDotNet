@@ -2,24 +2,26 @@
 
 <PageTitle>VerEstudiantes</PageTitle>
 
-@* @inject GetEstudianteUseCase VerEstudiante *@
-@inject AgregarEstudianteUseCase AgregarEstudiante 
-
+@* @inject GetEstudianteUseCase GetEstudiante *@
+@inject AgregarEstudianteUseCase AgregarEstudianteUseCase
 @inject ModificarEstudianteUseCase ModificarEstudiante 
 @inject EliminarEstudianteUseCase EliminarEstudiante 
+@inject GetEstudiantesUseCase GetEstudiantesUseCase
+@inject NavigationManager Navegador
+
 
 
 <h1>Estudiantes: </h1>
 <table class="table">
 
 <td>
-    <button class="btn btn-success"> Agregar Nuevo Estudiante</button>
+    <button class="btn btn-success" @onclick="()=>agregarEstudiante()" > Agregar Nuevo Estudiante</button>
 </td>
 <td>
-    <a href="listadoEstudiantesCursando"><button class="btn btn-primary"> Ver estudiantes aun cursando</button></a>
+    <a href="listadoEstudiantesCursando"><button class="btn btn"> Ver estudiantes aun cursando</button></a>
 </td>
 <td>
-    <a href="listadoEstudiantesCursoFinalizado"><button class="btn btn-primary" > Ver estudiantes con cursos finalizados</button></a>
+    <a href="listadoEstudiantesCursoFinalizado"><button class="btn btn" > Ver estudiantes con cursos finalizados</button></a>
 </td>
 
 </table>
@@ -34,24 +36,41 @@
             </tr>
         </thead>
         <tbody>
-            @* @foreach (var Estudiante in Estudiantes) *@
-             @* {  *@
+            @foreach (var Estudiante in _estudiantes)
+             { 
                 <tr>
-                     <td>Estudiante.DNI</td>
-                    <td>Estudiante.Nombre</td>
-                    <td>Estudiante.Apellido</td>
-                    <td>Estudiante.Mail</td> 
-                    <td><button class="btn btn-primary btn-xs" >Ver Estudiante </button>
-                        <button class="btn btn-primary btn-xs" >Ver cursos </button>
+                    <td>@Estudiante.DNI</td>
+                    <td>@Estudiante.Nombre</td>
+                    <td>@Estudiante.Apellido</td>
+                    <td>@Estudiante.Mail</td> 
+                    <td>
+                        <button class="btn btn-primary btn-xs" >Ver Estudiante </button>
+                        <button class="btn btn-primary btn-xs" @onclick="()=>verCursosDelEstudiante(Estudiante.Id)"> Ver cursos </button>
                         <button class="btn btn-info btn-xs">Modificar Estudiante</button>
                         <button class="btn btn-danger btn-xs" >Eliminar Estudiante</button>
                     </td> 
                 </tr>
-                 @* @onclick="()=>AgregarEstudiante.Ejecutar(Estudiante.id)" *@
 
                 @* DENTRO DE LOS BOTONES *@
                  @* @onclick="()=>ModificarEstudiante.Ejecutar(Estudiante.id)" *@
                 @* @onclick="()=>EliminarEstudiante.Ejecutar(Estudiante.id)" *@
-            @* }  *@
+            } 
         </tbody>
+        
     </table>
+
+@code{
+    List<Estudiante> _estudiantes = new List<Estudiante>();
+     protected override void OnInitialized()
+    {     
+        _estudiantes = GetEstudiantesUseCase.Ejecutar();
+    }
+    void verCursosDelEstudiante(int id_estudiante){
+        
+        Navegador.NavigateTo($"verCursosEstudiante/{id_estudiante}");
+    }
+
+    void agregarEstudiante(){
+        Navegador.NavigateTo($"agregarEstudiante");
+    }
+}

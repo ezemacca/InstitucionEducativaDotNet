@@ -9,8 +9,8 @@ public class GetCursosUseCase
     {
         _rCurso = rCurso;
     }
-    public  List<Curso> Ejecutar(int id)
+    public  List<Curso>? Ejecutar()
     {
-        return _rCurso.GetCursos(id);
+        return _rCurso.GetCursos();
     }
 }

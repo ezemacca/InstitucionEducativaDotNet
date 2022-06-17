@@ -20,22 +20,24 @@ builder.Services.AddTransient<AgregarCursoUseCase>();
 builder.Services.AddTransient<ModificarCursoUseCase>();
 builder.Services.AddTransient<GetCursoUseCase>();
 builder.Services.AddTransient<EliminarCursoUseCase>();
-builder.Services.AddTransient<ListarCursosUseCase>();
+builder.Services.AddTransient<GetCursosUseCase>();
+builder.Services.AddTransient<GetCursosInscriptosUseCase>();
+
 //CASOS DE USO DE LOS ESTUDIANTES
 builder.Services.AddTransient<AgregarEstudianteUseCase>();
 builder.Services.AddTransient<ModificarEstudianteUseCase>();
 builder.Services.AddTransient<GetEstudianteUseCase>();
 builder.Services.AddTransient<EliminarEstudianteUseCase>();
-builder.Services.AddTransient<ListarEstudiantesUseCase>();
+builder.Services.AddTransient<GetEstudiantesUseCase>();
 //CASOS DE USO DE LAS INSCRIPCIONES
 builder.Services.AddTransient<AgregarInscripcionUseCase>();
 builder.Services.AddTransient<ModificarInscripcionUseCase>();
 builder.Services.AddTransient<GetInscripcionUseCase>();
 builder.Services.AddTransient<EliminarInscripcionUseCase>();
-builder.Services.AddTransient<ListarInscripcionesUseCase>();
+builder.Services.AddTransient<GetInscripcionesUseCase>();
 //CASOS ESPECIALES
-builder.Services.AddTransient<ListarEstudiantesEstudiandoUseCase>();
-builder.Services.AddTransient<ListarEstudiantesAntiguosUseCase>();
+// builder.Services.AddTransient<ListarEstudiantesEstudiandoUseCase>();
+// builder.Services.AddTransient<GetEstudiantesAntiguosUseCase>();
 //CONFIGURAR LOS REPOSITORIOS CON SUS INTERFACES
 builder.Services.AddScoped<IRepositorioCurso,RepositorioCurso>();
 builder.Services.AddScoped<IRepositorioEstudiante,RepositorioEstudiante>();

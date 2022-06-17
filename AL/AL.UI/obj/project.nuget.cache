@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ohvMNqZKrC74XO4nrJvtQIuRb86yK2cQL0Gd2CWpE1xHoTyICRgTS37ypjEgUZXreC1ssUvMwGqTSSZK8FfpaA==",
+  "dgSpecHash": "dPape8FLlgrNVzrfkvbggQD8MHJyAB18b+coIhl9+DHVaA0jLZLqcYNemI5x6K0xFj19FL+krZdoCry2/Jsx5A==",
   "success": true,
-  "projectFilePath": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/AL.UI.csproj",
+  "projectFilePath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj",
   "expectedPackageFiles": [
     "/Users/ezequielmacca/.nuget/packages/microsoft.data.sqlite.core/6.0.5/microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
     "/Users/ezequielmacca/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",

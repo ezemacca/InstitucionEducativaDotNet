@@ -2,16 +2,17 @@
 
 <PageTitle>VerCursos</PageTitle>
 
-@inject GetCursoUseCase VerCurso
-@inject AgregarCursoUseCase AgregarCurso 
-
+@inject GetCursoUseCase GetCursoUseCase
+@inject GetCursosUseCase GetCursosUseCase
 @inject ModificarCursoUseCase ModificarCurso 
 @inject EliminarCursoUseCase EliminarCurso 
+@inject NavigationManager Navegador
+
 
 
 <h1>Cursos: </h1>
 
-<button class="btn btn-success"> Agregar Nuevo Curso</button>
+<button class="btn btn-success" @onclick="()=>agregarCurso()"> Agregar Nuevo Curso</button>
 
  <table class="table">
         <thead>
@@ -24,24 +25,35 @@
             </tr>
         </thead>
         <tbody>
-            @* @foreach (var curso in cursos) *@
-             @* {  *@
+            @foreach (var curso in _cursos)
+             { 
                 <tr>
-                     <td>curso.Titulo</td>
-                    <td>curso.Descripcion</td>
-                    <td>curso.FechaInicio</td>
-                    <td>curso.FechaFin</td> 
+                     <td>@curso.Titulo</td>
+                    <td>@curso.Descripcion</td>
+                    <td>@curso.FechaInicio</td>
+                    <td>@curso.FechaFin</td> 
                     <td><button class="btn btn-primary" >Ver Curso </button>
                         <button class="btn btn-primary" >Ver Estudiantes</button>
                         <button class="btn btn-info">Modificar Curso</button>
                         <button class="btn btn-danger" >Eliminar Curso</button>
                     </td> 
                 </tr>
-                 @* @onclick="()=>AgregarCurso.Ejecutar(curso.id)" *@
+                 @*  *@
 
                 @* DENTRO DE LOS BOTONES *@
                  @* @onclick="()=>ModificarCurso.Ejecutar(curso.id)" *@
                 @* @onclick="()=>EliminarCurso.Ejecutar(curso.id)" *@
-            @* }  *@
+            } 
         </tbody>
     </table>
+
+    @code{
+    List<Curso>? _cursos = new List<Curso>();
+     protected override void OnInitialized()
+    {     
+        _cursos = GetCursosUseCase.Ejecutar();
+    }
+        void agregarCurso(){
+        Navegador.NavigateTo($"agregarCurso");
+    }
+    }

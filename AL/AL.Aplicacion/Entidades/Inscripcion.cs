@@ -8,4 +8,5 @@ public class Inscripcion
     public DateOnly FechaInscripcion{get;set;}
     public Curso? Curso {get;set;}
     public Estudiante? Estudiante{get;set;}
+
 }

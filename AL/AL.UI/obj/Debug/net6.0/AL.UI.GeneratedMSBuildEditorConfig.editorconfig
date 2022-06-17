@@ -8,73 +8,89 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AL.UI
 build_property.RootNamespace = AL.UI
-build_property.ProjectDir = /Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/
+build_property.ProjectDir = /Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI
+build_property.MSBuildProjectDirectory = /Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/App.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/Counter.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/AgregarCurso.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWdyZWdhckN1cnNvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/AgregarEstudiante.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWdyZWdhckVzdHVkaWFudGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/AgregarInscripcion.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWdyZWdhckluc2NyaXBjaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/FetchData.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/Index.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/ListadoEstudiantesCursando.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/ListadoEstudiantesCursando.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGFkb0VzdHVkaWFudGVzQ3Vyc2FuZG8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/ListadoEstudiantesCursoFinalizado.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/ListadoEstudiantesCursoFinalizado.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGFkb0VzdHVkaWFudGVzQ3Vyc29GaW5hbGl6YWRvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/VerCursos.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/VerCursos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyQ3Vyc29zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/VerEstudiantes.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/VerCursosEstudiante.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyQ3Vyc29zRXN0dWRpYW50ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/VerEstudiantes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVyRXN0dWRpYW50ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/VerInscripciones.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/VerInscripciones.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmVySW5zY3JpcGNpb25lcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Shared/SurveyPrompt.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/_Imports.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Shared/MainLayout.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4fmoa8k85s
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Shared/NavMenu.razor]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-8lx0s4e4jr
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/Error.cshtml]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/_Host.cshtml]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/Pages/_Layout.cshtml]
+[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

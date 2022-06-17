@@ -1112,11 +1112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/AL.UI.csproj",
+      "projectUniqueName": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj",
       "projectName": "AL.UI",
-      "projectPath": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/AL.UI.csproj",
+      "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj",
       "packagesPath": "/Users/ezequielmacca/.nuget/packages/",
-      "outputPath": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.UI/obj/",
+      "outputPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ezequielmacca/.nuget/NuGet/NuGet.Config"
@@ -1131,11 +1131,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.Aplicacion/AL.Aplicacion.csproj": {
-              "projectPath": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.Aplicacion/AL.Aplicacion.csproj"
+            "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj": {
+              "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj"
             },
-            "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.Repositorios/AL.Repositorios.csproj": {
-              "projectPath": "/Users/ezequielmacca/Downloads/dotnetEjercicio2-main/AL/AL.Repositorios/AL.Repositorios.csproj"
+            "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj": {
+              "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj"
             }
           }
         }

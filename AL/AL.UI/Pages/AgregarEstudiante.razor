@@ -1,0 +1,62 @@
+@page "/agregarEstudiante/{Id:int?}"
+@inject NavigationManager Navegador
+@inject AgregarEstudianteUseCase AgregarEstudianteUseCase
+@inject GetEstudianteUseCase GetEstudianteUseCase
+@inject ModificarEstudianteUseCase ModificarEstudianteUseCase
+
+@if (_nuevoEstudiante)
+{
+    <h1>Agregar un nuevo estudiante:</h1>    
+}else
+{
+    <h1>Modificar estudiante @_estudiante.Nombre @_estudiante.Apellido:</h1>
+}
+
+@if (_se_creo)
+{
+    <p class='alert alert-success'> Estudiante agregado satisfactoriamente.</p>
+}
+
+<input placeholder="Ingrese nombre del estudiante" @bind="_estudiante.Nombre" class="form-control">
+<input placeholder="Ingrese apellido del estudiante" @bind="_estudiante.Apellido" class="form-control">
+<input type='email' placeholder="Ingrese email" @bind="_estudiante.Mail" class="form-control">
+<input type='number' placeholder="Ingrese DNI" @bind="_estudiante.DNI" class="form-control">
+<button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
+
+@code 
+{
+    Estudiante _estudiante = new Estudiante();
+    [Parameter] public int? Id { get; set; }
+    bool _nuevoEstudiante= true;
+    bool _se_creo = false;
+    bool _se_modifico = false;
+    
+    protected override void OnParametersSet()
+    {
+        if(Id != null)
+        {
+            var estudiante_hallado = GetEstudianteUseCase.Ejecutar(Id.Value);
+            if(estudiante_hallado != null)
+            {
+                _estudiante = estudiante_hallado;
+                _nuevoEstudiante = false;
+            }
+        }
+    }
+            
+    void Aceptar()
+    {
+        if(_nuevoEstudiante)
+        {
+            AgregarEstudianteUseCase.Ejecutar(_estudiante);
+            _se_creo = true;
+            _estudiante = new Estudiante();
+            Navegador.NavigateTo("/agregarEstudiante");
+        }else
+        {
+            ModificarEstudianteUseCase.Ejecutar(_estudiante);
+            _se_modifico = true;
+            Navegador.NavigateTo($"/listadoEstudiantes/{_se_modifico}");
+        }
+    }
+}

@@ -9,8 +9,8 @@ public class GetEstudiantesUseCase
     {
         _rEstudiante = rEstudiante;
     }
-    public  List<Estudiante> Ejecutar(int id_curso)
+    public  List<Estudiante> Ejecutar()
     {
-        return _rEstudiante.GetEstudiantes(id_curso);
+        return _rEstudiante.GetEstudiantes();
     }
 }
