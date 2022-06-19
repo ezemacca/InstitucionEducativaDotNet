@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj": {}
+    "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj": {
+    "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
+        "projectUniqueName": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj",
         "projectName": "AL.Aplicacion",
-        "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\obj\\",
+        "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj",
+        "packagesPath": "/Users/ezequielmacca/.nuget/packages/",
+        "outputPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/ezequielmacca/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }
