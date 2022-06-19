@@ -35,7 +35,7 @@
                     <td>@Inscripcion.Estudiante?.Apellido</td>
 
                     <td><button class="btn btn-primary" >Ver Inscripcion </button>
-                        <button class="btn btn-info">Modificar Inscripcion</button>
+                        <button class="btn btn-info" @onclick="()=>modificarInscripcion(Inscripcion.Id)">Modificar Inscripcion</button>
                         <button class="btn btn-danger" @onclick="()=>eliminarInscripcion(Inscripcion.Id)">Eliminar Inscripcion</button>
                     </td> 
                 </tr>
@@ -60,6 +60,10 @@
     void agregarInscripcion()
     {
         Navegador.NavigateTo($"agregarInscripcion");
+    }
+    void modificarInscripcion(int id_inscripcion)
+    {
+        Navegador.NavigateTo($"modificarInscripcion/{id_inscripcion}");
     }
     void eliminarInscripcion()
     {
