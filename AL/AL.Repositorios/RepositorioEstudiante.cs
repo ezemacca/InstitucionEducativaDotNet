@@ -60,16 +60,6 @@ public class RepositorioEstudiante : IRepositorioEstudiante
     {
         using(var context = new InstitucionEducativaContext())
         {
-            //  List<Estudiante> estudiantes= new List<Estudiante>();
-
-            // List<Curso> cursosActivos= context.Cursos
-            //     .Include(c => c.Inscripciones)
-            //     .ThenInclude(i => i.Estudiante)
-            //     .Where(cur => cur.FechaInicio < DateTime.Now && cur.FechaFin > DateTime.Now)
-            //     .ToList();
-                
-            // cursosActivos.ForEach(c => c.Inscripciones.ForEach(i => estudiantes.Add(new Estudiante(){ Nombre=i.Estudiante.Nombre, Apellido=i.Estudiante.Apellido, Inscripciones= new List<Inscripcion>(){i}})));
-            // return estudiantes;  
             
             List<Estudiante> estudiantes= context.Estudiantes.Include(est => est.Inscripciones).ThenInclude(ins=> ins.Curso).ToList();
             List<Estudiante> estudiantes_cursando= new List<Estudiante>();
@@ -84,7 +74,8 @@ public class RepositorioEstudiante : IRepositorioEstudiante
                                     new Estudiante()
                                     {   
                                         Nombre=e.Nombre, 
-                                        Apellido=e.Apellido, 
+                                        Apellido=e.Apellido,
+                                        DNI=e.DNI, 
                                         Inscripciones= new List<Inscripcion>(){i}
                                     }
                                 );
@@ -92,7 +83,6 @@ public class RepositorioEstudiante : IRepositorioEstudiante
                             else
                             {
                                 estudiantes_cursando.Find(est=> est.DNI==e.DNI).Inscripciones.Add(i);
-                                
                             }
                         }
                     }
@@ -100,10 +90,7 @@ public class RepositorioEstudiante : IRepositorioEstudiante
             }
             context.SaveChanges();
             return estudiantes_cursando;
- 
-
         }
-        return null;
     }
 
     public List<Estudiante> GetEstudiantesConUnCursoFinalizado()

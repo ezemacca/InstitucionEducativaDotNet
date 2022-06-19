@@ -1,4 +1,4 @@
-
+AL/AL.UI/obj/
 AL/AL.UI/obj/staticwebassets.pack.sentinel
 AL/AL.UI/obj/project.nuget.cache
 AL/AL.UI/obj/project.assets.json
@@ -31,6 +31,7 @@ AL/AL.UI/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
 AL/AL.UI/obj/AL.UI.csproj.nuget.g.targets
 AL/AL.UI/obj/AL.UI.csproj.nuget.g.props
 AL/AL.UI/obj/AL.UI.csproj.nuget.dgspec.json
+AL/AL.UI/bin/
 AL/AL.UI/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
 AL/AL.UI/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
 AL/AL.UI/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
@@ -413,6 +414,7 @@ AL/AL.Repositorios/bin/Debug/net6.0/AL.Repositorios.deps.json
 AL/AL.Repositorios/bin/Debug/net6.0/AL.Aplicacion.pdb
 AL/AL.Repositorios/bin/Debug/net6.0/AL.Aplicacion.dll
 AL/AL.Repositorios/.DS_Store
+AL/AL.Aplicacion/obj/
 AL/AL.Aplicacion/obj/project.nuget.cache
 AL/AL.Aplicacion/obj/project.assets.json
 AL/AL.Aplicacion/obj/Debug/net6.0/refint/AL.Aplicacion.dll
@@ -450,6 +452,7 @@ AL/AL.Aplicacion/obj/Debug/net6.0/AL.Aplicacion.pdb
 AL/AL.Aplicacion/obj/project.assets.json
 AL/AL.Aplicacion/obj/project.nuget.cache
 AL/AL.Repositorios/.DS_Store
+AL/AL.Repositorios/bin/
 AL/AL.Repositorios/bin/Debug/net6.0/AL.Aplicacion.dll
 AL/AL.Repositorios/bin/Debug/net6.0/AL.Aplicacion.pdb
 AL/AL.Repositorios/bin/Debug/net6.0/AL.Repositorios.dll
@@ -468,6 +471,7 @@ AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.pdb
 AL/AL.Repositorios/obj/project.assets.json
 AL/AL.Repositorios/obj/project.nuget.cache
 AL/AL.UI/.DS_Store
+AL/AL.UI/bin/
 AL/AL.UI/bin/Debug/net6.0/AL.Aplicacion.dll
 AL/AL.UI/bin/Debug/net6.0/AL.Aplicacion.pdb
 AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.dll
@@ -766,6 +770,7 @@ AL/AL.UI/bin/Debug/net6.0/refs/System.Xml.XPath.dll
 AL/AL.UI/bin/Debug/net6.0/refs/System.Xml.XPath.XDocument.dll
 AL/AL.UI/bin/Debug/net6.0/refs/WindowsBase.dll
 AL/AL.UI/InstitucionEducativa.sqlite
+AL/AL.UI/obj/
 AL/AL.UI/obj/AL.UI.csproj.nuget.dgspec.json
 AL/AL.UI/obj/AL.UI.csproj.nuget.g.props
 AL/AL.UI/obj/AL.UI.csproj.nuget.g.targets
@@ -820,6 +825,19 @@ AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.dll
 AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.pdb
 AL/AL.Repositorios/obj/Debug/net6.0/ref/AL.Repositorios.dll
 AL/AL.Repositorios/obj/Debug/net6.0/refint/AL.Repositorios.dll
+AL/AL.UI/bin/
+AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.dll
+AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.pdb
+AL/AL.UI/bin/Debug/net6.0/AL.UI.dll
+AL/AL.UI/bin/Debug/net6.0/AL.UI.pdb
+AL/AL.UI/obj/Debug/net6.0/AL.UI.csproj.AssemblyReference.cache
+AL/AL.UI/obj/Debug/net6.0/AL.UI.dll
+AL/AL.UI/obj/Debug/net6.0/AL.UI.pdb
+AL/AL.UI/obj/staticwebassets.pack.sentinel
+AL/AL.Repositorios/bin/Debug/net6.0/AL.Repositorios.dll
+AL/AL.Repositorios/bin/Debug/net6.0/AL.Repositorios.pdb
+AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.dll
+AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.pdb
 AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.dll
 AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.pdb
 AL/AL.UI/bin/Debug/net6.0/AL.UI.dll

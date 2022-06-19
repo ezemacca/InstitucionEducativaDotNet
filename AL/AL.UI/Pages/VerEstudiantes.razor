@@ -47,13 +47,10 @@
         </thead>
         <tbody>
              @foreach (var Estudiante in _estudiantes)
-             { 
+             {    
                 <tr>
-                    
                     <td>@Estudiante.Nombre</td>
                     <td>@Estudiante.Apellido</td>
-                   
-                     
                     @if(!_mostrar_curso)
                     {
                         <td>@Estudiante.DNI</td>
@@ -63,17 +60,23 @@
                             <button class="btn btn-info btn-xs"  @onclick="()=>modificarEstudiante(Estudiante.Id)">Modificar Estudiante</button>
                             <button class="btn btn-danger btn-xs"  @onclick="()=>eliminarEstudiante(Estudiante.Id)" >Eliminar Estudiante</button>
                         </td> 
+                        <hr>
                     }
                     else
                     {
                         <td>
                         @foreach (var inscripcion in @Estudiante?.Inscripciones)
                         {
-                            @inscripcion?.Curso?.Titulo                        
+                            <a>- </a>@inscripcion?.Curso?.Titulo    
+                            <br>
+                            
                         }
                         </td>
-                     }
+                        <hr>
+                    }
                 </tr>
+                
+           
             } 
         </tbody>
     </table>
