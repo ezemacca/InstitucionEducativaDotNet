@@ -1,0 +1,35 @@
+@page "/modificarCurso/{Id:int}"
+@inject NavigationManager Navegador
+@inject GetCursoUseCase GetCursoUseCase
+@inject ModificarCursoUseCase ModificarCursoUseCase
+
+
+<h1>Modificar curso @_curso.Titulo:</h1>
+
+<input placeholder="Titulo" @bind="_curso.Titulo" class="form-control">
+<input placeholder="Descripcion" @bind="_curso.Descripcion" class="form-control">
+<input type="datetime-local" placeholder="Fecha de inicio" @bind="_curso.FechaInicio" class="form-control">
+<input type="datetime-local" placeholder="Fecha de finalizacion" @bind="_curso.FechaFin" class="form-control">
+<button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
+
+@code 
+{
+    Curso _curso = new Curso();
+    [Parameter] public int? Id { get; set; }
+  
+    protected override void OnParametersSet()
+    {
+        var curso= GetCursoUseCase.Ejecutar(Id.Value);
+            if(curso!= null)
+            {
+                _curso= curso;
+            }
+    }
+     void Aceptar()
+    {
+        ModificarCursoUseCase.Ejecutar(_curso);
+        _curso = new Curso();
+        Navegador.NavigateTo("/");
+    }
+
+}

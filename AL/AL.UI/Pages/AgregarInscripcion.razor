@@ -100,8 +100,8 @@
     {
         if((_estudianteSeleccionado != -1) && (_cursoSeleccionado != -1))
         {
-            _inscripcion.estudiante_id= _estudianteSeleccionado;
-            _inscripcion.Curso_id= _cursoSeleccionado;
+            _inscripcion.estudianteId= _estudianteSeleccionado;
+            _inscripcion.CursoId= _cursoSeleccionado;
             if(_nuevaInscripcion)
             {
                 _inscripcion.FechaInscripcion=DateOnly.FromDateTime(DateTime.Now);

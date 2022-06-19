@@ -4,9 +4,9 @@
 
 @inject GetCursoUseCase GetCursoUseCase
 @inject GetCursosUseCase GetCursosUseCase
-@inject ModificarCursoUseCase ModificarCurso 
-@inject EliminarCursoUseCase EliminarCurso 
+@inject EliminarCursoUseCase EliminarCursoUseCase
 @inject NavigationManager Navegador
+@inject IJSRuntime JsRuntime
 
 
 
@@ -14,7 +14,7 @@
 
 <button class="btn btn-success" @onclick="()=>agregarCurso()"> Agregar Nuevo Curso</button>
 
- <table class="table">
+<table class="table">
         <thead>
             <tr>
                 <th>Titulo</th>
@@ -32,28 +32,51 @@
                     <td>@curso.Descripcion</td>
                     <td>@curso.FechaInicio</td>
                     <td>@curso.FechaFin</td> 
-                    <td><button class="btn btn-primary" >Ver Curso </button>
-                        <button class="btn btn-primary" >Ver Estudiantes</button>
-                        <button class="btn btn-info">Modificar Curso</button>
-                        <button class="btn btn-danger" >Eliminar Curso</button>
+                    <td>
+                        @* <button class="btn btn-primary" >Ver Curso </button> *@
+                        <button class="btn btn-primary" @onclick="()=>verEstudiantesInscriptos(curso.Id)" >Ver Estudiantes</button>
+                        <button class="btn btn-info" @onclick="()=>modificarCurso(curso.Id)"  >Modificar Curso</button>
+                        <button class="btn btn-danger" @onclick="()=>eliminarCurso(curso.Id)">Eliminar Curso</button>
                     </td> 
                 </tr>
-                 @*  *@
 
                 @* DENTRO DE LOS BOTONES *@
-                 @* @onclick="()=>ModificarCurso.Ejecutar(curso.id)" *@
-                @* @onclick="()=>EliminarCurso.Ejecutar(curso.id)" *@
+                @* @onclick="()=>EliminarCurso(curso.id)" *@
             } 
         </tbody>
     </table>
 
-    @code{
+@code{
+
     List<Curso>? _cursos = new List<Curso>();
-     protected override void OnInitialized()
+    bool _curso_eliminado=false;
+    protected override void OnInitialized()
     {     
         _cursos = GetCursosUseCase.Ejecutar();
     }
-        void agregarCurso(){
+    void verEstudiantesInscriptos(int Id_curso){
+        Navegador.NavigateTo($"verEstudiantesInscriptos/{Id_curso}");
+    }
+    void agregarCurso(){
         Navegador.NavigateTo($"agregarCurso");
     }
+    void modificarCurso(int Id){
+        Navegador.NavigateTo($"modificarCurso/{Id}");
     }
+
+    async Task eliminarCurso(int id)
+    {
+        var _cursoSeleccionado= GetCursoUseCase.Ejecutar(id);
+        if(_cursoSeleccionado != null)
+        {
+            bool confirmado= await JsRuntime.InvokeAsync<bool>("confirm",$"Esta seguro que desea borrar el curso {_cursoSeleccionado.Titulo}?");
+            if(confirmado)
+            {
+                EliminarCursoUseCase.Ejecutar(id);
+                _curso_eliminado= true;
+                _cursos= GetCursosUseCase.Ejecutar();              
+            }
+        }
+
+    }
+}

@@ -2,12 +2,12 @@
 
 <PageTitle>VerEstudiantes</PageTitle>
 
-@* @inject GetEstudianteUseCase GetEstudiante *@
 @inject AgregarEstudianteUseCase AgregarEstudianteUseCase
-@inject ModificarEstudianteUseCase ModificarEstudiante 
-@inject EliminarEstudianteUseCase EliminarEstudiante 
+@inject EliminarEstudianteUseCase EliminarEstudianteUseCase
 @inject GetEstudiantesUseCase GetEstudiantesUseCase
+@inject GetEstudianteUseCase GetEstudianteUseCase
 @inject NavigationManager Navegador
+@inject IJSRuntime JsRuntime
 
 
 
@@ -44,16 +44,16 @@
                     <td>@Estudiante.Apellido</td>
                     <td>@Estudiante.Mail</td> 
                     <td>
-                        <button class="btn btn-primary btn-xs" >Ver Estudiante </button>
+                        @* <button class="btn btn-primary btn-xs" >Ver Estudiante </button> *@
                         <button class="btn btn-primary btn-xs" @onclick="()=>verCursosDelEstudiante(Estudiante.Id)"> Ver cursos </button>
-                        <button class="btn btn-info btn-xs">Modificar Estudiante</button>
-                        <button class="btn btn-danger btn-xs" >Eliminar Estudiante</button>
+                        <button class="btn btn-info btn-xs"  @onclick="()=>modificarEstudiante(Estudiante.Id)">Modificar Estudiante</button>
+                        <button class="btn btn-danger btn-xs"  @onclick="()=>eliminarEstudiante(Estudiante.Id)" >Eliminar Estudiante</button>
                     </td> 
                 </tr>
 
                 @* DENTRO DE LOS BOTONES *@
-                 @* @onclick="()=>ModificarEstudiante.Ejecutar(Estudiante.id)" *@
-                @* @onclick="()=>EliminarEstudiante.Ejecutar(Estudiante.id)" *@
+                 @* *@
+                @* *@
             } 
         </tbody>
         
@@ -72,5 +72,23 @@
 
     void agregarEstudiante(){
         Navegador.NavigateTo($"agregarEstudiante");
+    }
+
+    void modificarEstudiante(int Id){
+        Navegador.NavigateTo($"modificarEstudiante/{Id}");
+    }
+
+    async Task eliminarEstudiante(int id)
+    {
+        var _estudianteSeleccionado= GetEstudianteUseCase.Ejecutar(id);
+        if(_estudianteSeleccionado != null)
+        {
+            bool confirmado= await JsRuntime.InvokeAsync<bool>("confirm",$"Esta seguro que desea borrar el estudiante con id {_estudianteSeleccionado.Id}?");
+            if(confirmado)
+            {
+                EliminarEstudianteUseCase.Ejecutar(id);
+                _estudiantes= GetEstudiantesUseCase.Ejecutar();
+            }
+        }
     }
 }

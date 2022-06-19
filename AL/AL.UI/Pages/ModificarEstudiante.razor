@@ -1,11 +1,10 @@
-@page "/agregarEstudiante/{Id:int?}"
+@page "/modificarEstudiante/{Id:int}"
 @inject NavigationManager Navegador
 @inject AgregarEstudianteUseCase AgregarEstudianteUseCase
 @inject GetEstudianteUseCase GetEstudianteUseCase
 @inject ModificarEstudianteUseCase ModificarEstudianteUseCase
 
-
-    <h1>Agregar un nuevo estudiante:</h1>    
+    <h1>Modificar estudiante @_estudiante.Nombre @_estudiante.Apellido:</h1>
 
     <input placeholder="Ingrese nombre del estudiante" @bind="_estudiante.Nombre" class="form-control">
     <input placeholder="Ingrese apellido del estudiante" @bind="_estudiante.Apellido" class="form-control">
@@ -13,28 +12,27 @@
     <input type='number' placeholder="Ingrese DNI" @bind="_estudiante.DNI" class="form-control">
     <button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
 
-@code 
+
+@code
 {
     Estudiante _estudiante = new Estudiante();
     [Parameter] public int? Id { get; set; }
-    
-    protected override void OnParametersSet()
+
+     protected override void OnParametersSet()
     {
         if(Id != null)
         {
-            var estudiante_hallado = GetEstudianteUseCase.Ejecutar(Id.Value);
-            if(estudiante_hallado != null)
+            var estudiante = GetEstudianteUseCase.Ejecutar(Id.Value);
+            if(estudiante != null)
             {
-                _estudiante = estudiante_hallado;
+                _estudiante = estudiante;
             }
         }
-    } 
+    }
     void Aceptar()
     {
-       
-            AgregarEstudianteUseCase.Ejecutar(_estudiante);
-            _estudiante = new Estudiante();
-            Navegador.NavigateTo("/agregarEstudiante");
-        
+            ModificarEstudianteUseCase.Ejecutar(_estudiante);
+            _estudiante=new Estudiante();
+            Navegador.NavigateTo($"/verEstudiantes");
     }
 }

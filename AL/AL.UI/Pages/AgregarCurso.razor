@@ -1,16 +1,12 @@
-@page "/agregarCurso/{Id:int?}"
-@inject NavigationManager Navegador
-@inject AgregarCursoUseCase AgregarCursoUseCase
-@inject GetCursoUseCase GetCursoUseCase
-@inject ModificarCursoUseCase ModificarCursoUseCase
+    @page "/agregarCurso"
+    @inject NavigationManager Navegador
+    @inject AgregarCursoUseCase AgregarCursoUseCase
+    @inject GetCursoUseCase GetCursoUseCase
+    @inject ModificarCursoUseCase ModificarCursoUseCase
 
-@if (_nuevoCurso)
-{
-    <h1>Agregar un nuevo curso:</h1>    
-}else
-{
-    <h1>Modificar curso @_curso.Titulo:</h1>
-}
+    
+<h1>Agregar un nuevo curso</h1>
+    
 
 <input placeholder="Titulo" @bind="_curso.Titulo" class="form-control">
 <input placeholder="Descripcion" @bind="_curso.Descripcion" class="form-control">
@@ -19,32 +15,10 @@
 <button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
 @code 
 {
-    Curso _curso = new Curso();
-    [Parameter] public int? Id { get; set; }
-    bool _nuevoCurso= true;
-
-    protected override void OnParametersSet()
-    {
-        if(Id != null)
-        {
-            var curso_hallado= GetCursoUseCase.Ejecutar(Id.Value);
-            if(curso_hallado != null)
-            {
-                _curso= curso_hallado;
-                _nuevoCurso= false;
-            }
-        }
-    }
-            
+    Curso _curso = new Curso();     
     void Aceptar()
     {
-        if(_nuevoCurso)
-        {
-            AgregarCursoUseCase.Ejecutar(_curso);
-        }else
-        {
-            ModificarCursoUseCase.Ejecutar(_curso);
-        }
+        AgregarCursoUseCase.Ejecutar(_curso);
         _curso = new Curso();
         Navegador.NavigateTo("/");
     }

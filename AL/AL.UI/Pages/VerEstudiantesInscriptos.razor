@@ -1,0 +1,50 @@
+@page "/verEstudiantesInscriptos/{Id:int}"
+@inject GetCursoUseCase GetCursoUseCase
+@inject NavigationManager Navegador
+
+@if(_curso != null)
+{
+<h1>Lista de inscriptos del curso: @_curso.Titulo</h1>
+
+<table class="table">
+<thead>
+<tr>
+<th>DNI</th>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Mail</th>
+</tr>
+</thead>
+<tbody>
+@if(_curso.Inscripciones != null)
+{
+    @foreach (var inscripcion in _curso.Inscripciones)
+    {
+        <tr>
+        @if(inscripcion.Estudiante != null)
+        {
+        <td>@inscripcion.Estudiante.DNI</td>
+        <td>@inscripcion.Estudiante.Nombre</td>
+        <td>@inscripcion.Estudiante.Apellido</td>
+        <td>@inscripcion.Estudiante.Mail</td>
+        }
+        </tr>
+     }
+}
+</tbody>
+</table>
+}
+
+@code
+{
+    Curso? _curso= new Curso();
+    [Parameter] public int? Id { get; set; }
+    protected override void OnParametersSet()
+    {
+        if(Id != null)
+        {
+            _curso= GetCursoUseCase.Ejecutar(Id.Value);
+            _curso?.Inscripciones?.ToList();
+        }
+    }
+}
