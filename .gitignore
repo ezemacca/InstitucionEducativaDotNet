@@ -814,3 +814,17 @@ AL/AL.UI/obj/Debug/net6.0/AL.UI.pdb
 AL/AL.UI/obj/Debug/net6.0/ref/AL.UI.dll
 AL/AL.UI/obj/Debug/net6.0/refint/AL.UI.dll
 AL/AL.UI/obj/staticwebassets.pack.sentinel
+AL/AL.Repositorios/bin/Debug/net6.0/AL.Repositorios.dll
+AL/AL.Repositorios/bin/Debug/net6.0/AL.Repositorios.pdb
+AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.dll
+AL/AL.Repositorios/obj/Debug/net6.0/AL.Repositorios.pdb
+AL/AL.Repositorios/obj/Debug/net6.0/ref/AL.Repositorios.dll
+AL/AL.Repositorios/obj/Debug/net6.0/refint/AL.Repositorios.dll
+AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.dll
+AL/AL.UI/bin/Debug/net6.0/AL.Repositorios.pdb
+AL/AL.UI/bin/Debug/net6.0/AL.UI.dll
+AL/AL.UI/bin/Debug/net6.0/AL.UI.pdb
+AL/AL.UI/obj/Debug/net6.0/AL.UI.csproj.AssemblyReference.cache
+AL/AL.UI/obj/Debug/net6.0/AL.UI.dll
+AL/AL.UI/obj/Debug/net6.0/AL.UI.pdb
+AL/AL.UI/obj/staticwebassets.pack.sentinel
