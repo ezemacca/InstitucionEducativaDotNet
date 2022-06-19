@@ -58,7 +58,7 @@ public class RepositorioCurso : IRepositorioCurso
         {
             // var listaCursos= context.Cursos.Include(c => c.Inscripciones).ToList();
             
-            var lista_inscripciones= context.Inscripciones.Where( i=> i.estudianteId==id_estudiante).ToList();
+            var lista_inscripciones= context.Inscripciones.Where( i=> i.EstudianteId==id_estudiante).ToList();
             
             List<Curso>? listaCursosInscriptos=new List<Curso>();
             foreach (Inscripcion i in lista_inscripciones ) {
