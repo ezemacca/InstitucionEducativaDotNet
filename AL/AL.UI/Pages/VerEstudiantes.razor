@@ -15,8 +15,8 @@
 <h1>Estudiantes: </h1>
 <br><br>
  <div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-secondary active">
-        <input @onclick="()=>verTodos()" type="radio" name="options" id="option1" autocomplete="off" checked> Ver Todos
+    <label class="btn btn-secondary">
+        <input @onclick="()=>verTodos()" type="radio" name="options" id="option1" autocomplete="off" > Ver Todos
     </label>
     <label class="btn btn-secondary">
         <input @onclick="()=>verEstudiantesAunCursando()" type="radio" name="options" id="option2" autocomplete="off">  Ver estudiantes aun cursando
@@ -29,49 +29,51 @@
         <table class="table">
              <thead>
                 <tr>
-                    <th>DNI</th>
+                    
                     <th>Nombre</th>
                     <th>Apellido</th>
                     
-                    @if(_mostrar_curso)
+                    @if(!_mostrar_curso)
                     {
-                    <th>Cursos</th>
+                    <th>DNI</th>
+                    <th>Mail</th>
+                    <th>Acciones</th>
                     }
                     else
                     {
-                    <th>Mail</th>
-                    <th>Acciones</th>
+                    <th>Curso</th>
                     }
                 </tr>
         </thead>
         <tbody>
              @foreach (var Estudiante in _estudiantes)
              { 
-                 <tr>
-                    <td>@Estudiante.DNI</td>
+                <tr>
+                    
                     <td>@Estudiante.Nombre</td>
                     <td>@Estudiante.Apellido</td>
                    
                      
-                    @if(_mostrar_curso)
+                    @if(!_mostrar_curso)
                     {
-                        @foreach (var inscripcion in @Estudiante.Inscripciones)
-                        {
-                            <td>
-                                @inscripcion.Curso.Titulo
-                            </td>
-                        }
-                    }
-                    else{
+                        <td>@Estudiante.DNI</td>
                         <td>@Estudiante.Mail</td> 
                         <td>
-                        @* <button class="btn btn-primary btn-xs" >Ver Estudiante </button> *@
                             <button class="btn btn-primary btn-xs" @onclick="()=>verCursosDelEstudiante(Estudiante.Id)"> Ver cursos </button>
                             <button class="btn btn-info btn-xs"  @onclick="()=>modificarEstudiante(Estudiante.Id)">Modificar Estudiante</button>
                             <button class="btn btn-danger btn-xs"  @onclick="()=>eliminarEstudiante(Estudiante.Id)" >Eliminar Estudiante</button>
                         </td> 
+                    }
+                    else
+                    {
+                        <td>
+                        @foreach (var inscripcion in @Estudiante?.Inscripciones)
+                        {
+                            @inscripcion?.Curso?.Titulo                        
+                        }
+                        </td>
                      }
-                    </tr>
+                </tr>
             } 
         </tbody>
     </table>
@@ -88,6 +90,7 @@
     void verCursosDelEstudiante(int id_estudiante){
         
         Navegador.NavigateTo($"verCursosEstudiante/{id_estudiante}");
+
     }
 
     void agregarEstudiante(){
