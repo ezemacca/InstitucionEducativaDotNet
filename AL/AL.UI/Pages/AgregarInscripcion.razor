@@ -1,4 +1,4 @@
-@page "/agregarInscripcion/{Id:int?}"
+@page "/agregarInscripcion/"
 @inject NavigationManager Navegador
 @inject AgregarInscripcionUseCase AgregarInscripcionUseCase
 @inject GetInscripcionUseCase GetInscripcionUseCase
@@ -21,10 +21,7 @@
     <p class="alert alert-danger">Debe elegir un curso y un estudiante</p>
 }
 
-<!--<input placeholder="Ingrese nombre del estudiante" @bind="_inscripcion.Estudiante?.Nombre" class="form-control">
-<input placeholder="Ingrese apellido del estudiante" @bind="_inscripcion.Estudiante?.Apellido" class="form-control">
-<input type='email' placeholder="Ingrese email" @bind="_inscripcion.Estudiante?.Email" class="form-control">
-<input type='number' placeholder="Ingrese DNI" @bind="_inscripcion.Estudiante?.Dni" class="form-control">-->
+
 <label for="estudiante">Elija un estudiante</label>
 <select name="estudiante" aria-placeholder="Seleccionar" @bind="_estudianteSeleccionado" class="form-control" required>
     @* INTENTE HACER ALGO MAS LINDO PERO NO SALIO *@
@@ -48,13 +45,6 @@
     }
 </select>
 
-@* <input type="hidden" @bind="_inscripcion.FechaInscripcion"  class="form-control"> *@
-
-
-<!--<input placeholder="Titulo" @bind="_inscripcion.Curso?.Titulo" class="form-control">
-<input placeholder="Descripcion" @bind="_inscripcion.Curso?.Descripcion" class="form-control">
-<input type="datetime-local" placeholder="Fecha de inicio" @bind="_inscripcion.Curso?.Fecha_inicio" class="form-control">
-<input type="datetime-local" placeholder="Fecha de finalizacion" @bind="_inscripcion.Curso?.Fecha_finalizacion" class="form-control">-->
 
 <button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
 
@@ -65,29 +55,13 @@
     int _cursoSeleccionado= -1;
     List<Estudiante>? _listaEstudiantes= new List<Estudiante>();
     List<Curso>? _listaCursos= new List<Curso>();
-    [Parameter] public int? Id { get; set; }
-    bool _nuevaInscripcion = true;
     bool _se_creo = false;
-    bool _se_modifico = false;
     bool _errorSeleccion= false;
 
     protected override void OnInitialized()
     {
         _listaEstudiantes= GetEstudiantesUseCase.Ejecutar();
         _listaCursos= GetCursosUseCase.Ejecutar();
-    }
-    
-    protected override void OnParametersSet()
-    {
-        if(Id != null)  // se recibe un id en el path
-        {
-            var inscripcion_hallada = GetInscripcionUseCase.Ejecutar(Id.Value);
-            if(inscripcion_hallada != null)
-            {
-                _inscripcion = inscripcion_hallada; // se recupera una inscripcion para ese id
-                _nuevaInscripcion = false;
-            }
-        }
     }
             
     void Aceptar()
@@ -96,19 +70,11 @@
         {
             _inscripcion.EstudianteId= _estudianteSeleccionado;
             _inscripcion.CursoId= _cursoSeleccionado;
-            if(_nuevaInscripcion)
-            {
-                _inscripcion.FechaInscripcion=DateOnly.FromDateTime(DateTime.Now);
-                AgregarInscripcionUseCase.Ejecutar(_inscripcion);
-                _se_creo = true;
-                _inscripcion = new Inscripcion();
-                Navegador.NavigateTo("/agregarInscripcion");
-            }else
-            {
-                ModificarInscripcionUseCase.Ejecutar(_inscripcion);
-                _se_modifico = true;
-                Navegador.NavigateTo($"/listadoInscripciones/{_se_modifico}");
-            }
+            _inscripcion.FechaInscripcion=DateOnly.FromDateTime(DateTime.Now);
+            AgregarInscripcionUseCase.Ejecutar(_inscripcion);
+            _se_creo = true;
+            _inscripcion = new Inscripcion();
+            Navegador.NavigateTo("/agregarInscripcion");
         }else
         {
             _errorSeleccion= true;
