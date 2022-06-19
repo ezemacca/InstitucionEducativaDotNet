@@ -8,14 +8,8 @@
 @inject GetEstudiantesUseCase GetEstudiantesUseCase
 @inject GetEstudianteUseCase GetEstudianteUseCase
 
-@if (_nuevaInscripcion)
-{
     <h1>Añadir inscripción:</h1>    
-}else
-{
-    <h2>Modificando inscripción de @_inscripcion.Estudiante?.Nombre @_inscripcion.Estudiante?.Apellido al curso 
-        @_inscripcion.Curso?.Titulo:</h2>
-}
+
 
 @if (_se_creo)
 {

@@ -4,6 +4,11 @@
 @inject GetEstudianteUseCase GetEstudianteUseCase
 @inject ModificarEstudianteUseCase ModificarEstudianteUseCase
 
+    @if (_errorSeleccion)
+    {
+    <p class="alert alert-danger">Se debe completar todos los campos correctamente para agregar un estudiante</p>
+    }
+
 
     <h1>Agregar un nuevo estudiante:</h1>    
 
@@ -17,7 +22,7 @@
 {
     Estudiante _estudiante = new Estudiante();
     [Parameter] public int? Id { get; set; }
-    
+    bool _errorSeleccion=false;
     protected override void OnParametersSet()
     {
         if(Id != null)
@@ -31,10 +36,15 @@
     } 
     void Aceptar()
     {
-       
+        if((_estudiante.Nombre !="" ) || (_estudiante.Apellido !="" ) || (_estudiante.Mail !="" ) || (_estudiante.DNI >11111111 ))
+        {
             AgregarEstudianteUseCase.Ejecutar(_estudiante);
             _estudiante = new Estudiante();
             Navegador.NavigateTo("/agregarEstudiante");
-        
+        }else
+        {
+            _errorSeleccion= true;
+        }
+
     }
 }

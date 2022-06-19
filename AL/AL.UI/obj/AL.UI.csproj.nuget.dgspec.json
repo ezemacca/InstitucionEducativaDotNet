@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj": {}
+    "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\AL.UI.csproj": {}
   },
   "projects": {
-    "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj": {
+    "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
         "projectName": "AL.Aplicacion",
-        "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj",
-        "packagesPath": "/Users/ezequielmacca/.nuget/packages/",
-        "outputPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/obj/",
+        "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ezequielmacca/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,21 +52,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj": {
+    "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj",
+        "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj",
         "projectName": "AL.Repositorios",
-        "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj",
-        "packagesPath": "/Users/ezequielmacca/.nuget/packages/",
-        "outputPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/obj/",
+        "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj",
+        "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ezequielmacca/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -78,8 +78,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj": {
-                "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj"
+              "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj"
               }
             }
           }
@@ -114,21 +114,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj": {
+    "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\AL.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\AL.UI.csproj",
         "projectName": "AL.UI",
-        "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/AL.UI.csproj",
-        "packagesPath": "/Users/ezequielmacca/.nuget/packages/",
-        "outputPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/obj/",
+        "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\AL.UI.csproj",
+        "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ezequielmacca/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -140,11 +140,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj": {
-                "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Aplicacion/AL.Aplicacion.csproj"
+              "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Aplicacion\\AL.Aplicacion.csproj"
               },
-              "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj": {
-                "projectPath": "/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.Repositorios/AL.Repositorios.csproj"
+              "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj": {
+                "projectPath": "C:\\Users\\Nicol\\Documents\\GitHub\\InstitucionEducativaDotNet\\AL\\AL.Repositorios\\AL.Repositorios.csproj"
               }
             }
           }
@@ -182,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

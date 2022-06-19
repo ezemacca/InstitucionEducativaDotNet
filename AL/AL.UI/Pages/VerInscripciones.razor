@@ -18,7 +18,8 @@
             <tr>
                 <th>FechaInscripcion</th>
                 <th>Curso</th>
-                <th>Estudiante</th>
+                <th>Nombre Estudiante</th>
+                <th>Apellido Estudiante</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -27,24 +28,24 @@
              { 
                 <tr>
 
-                    <td>Inscripcion.FechaInscripcion</td>
-                    <td>Inscripcion.Curso</td>
-                    <td>Inscripcion.Estudiante</td>
+                    <td>@Inscripcion.FechaInscripcion</td>
+                    <td>@Inscripcion.Curso?.Titulo</td>
+                    <td>@Inscripcion.Estudiante?.Nombre</td>
+                    <td>@Inscripcion.Estudiante?.Apellido</td>
+
                     <td><button class="btn btn-primary" >Ver Inscripcion </button>
                         <button class="btn btn-info">Modificar Inscripcion</button>
                         <button class="btn btn-danger" >Eliminar Inscripcion</button>
                     </td> 
                 </tr>
-                 
-
-                @* DENTRO DE LOS BOTONES *@
-                 @* @onclick="()=>ModificarInscripcion.Ejecutar(Inscripcion.id)" *@
-                @* @onclick="()=>EliminarInscripcion.Ejecutar(Inscripcion.id)" *@
             } 
         </tbody>
     </table>
 
 @code{
+
+
+
      List<Inscripcion> _inscripciones = new List<Inscripcion>();
      protected override void OnInitialized()
     {     
@@ -55,7 +56,9 @@
         Navegador.NavigateTo($"verCursosEstudiante/{id_estudiante}");
     }
 
-    void agregarInscripcion(){
+    void agregarInscripcion()
+    {
         Navegador.NavigateTo($"agregarInscripcion");
     }
+
 }

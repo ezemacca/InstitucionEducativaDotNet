@@ -7,6 +7,10 @@
     
 <h1>Agregar un nuevo curso</h1>
     
+@if (_errorSeleccion)
+{
+    <p class="alert alert-danger">Los campos titulo o descripcion no pueden estar vacios</p>
+}    
 
 <input placeholder="Titulo" @bind="_curso.Titulo" class="form-control">
 <input placeholder="Descripcion" @bind="_curso.Descripcion" class="form-control">
@@ -16,10 +20,19 @@
 @code 
 {
     Curso _curso = new Curso();     
+
+    bool _errorSeleccion=false;
     void Aceptar()
+    {
+    if((_curso.Titulo !="" ) || (_curso.Descripcion !="" ))
     {
         AgregarCursoUseCase.Ejecutar(_curso);
         _curso = new Curso();
         Navegador.NavigateTo("/");
+    }
+    else
+    {
+        _errorSeleccion= true;
+    }
     }
 }
