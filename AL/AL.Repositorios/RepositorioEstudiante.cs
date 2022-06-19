@@ -60,29 +60,29 @@ public class RepositorioEstudiante : IRepositorioEstudiante
     {
         using(var context = new InstitucionEducativaContext())
         {
-            // // no se como hacer la consulta.
-            // List<Estudiante> estudiantesEstudiando= new List<Estudiante>();
-            // List<Curso> cursosActivos= context.Cursos.Include(c => c.Inscripciones)
-            //     .ThenInclude(i => i.Estudiante)
-            //     .Where(cur => cur.Fecha_inicio < DateTime.Now && cur.Fecha_finalizacion > DateTime.Now)
-            //     .ToList();
-            // cursosActivos.ForEach(c => c.Inscripciones.ForEach(i => estudiantesEstudiando.Add(new Estudiante(){ Nombre=i.Estudiante.Nombre, Apellido=i.Estudiante.Apellido, Inscripciones= new List<Inscripcion>(){i}})));
-            // return estudiantesEstudiando;      
+            List<Estudiante> estudiantes= new List<Estudiante>();
+            List<Curso> cursosActivos= context.Cursos
+                .Include(c => c.Inscripciones)
+                .ThenInclude(i => i.Estudiante)
+                .Where(cur => cur.FechaInicio < DateTime.Now && cur.FechaFin > DateTime.Now)
+                .ToList();
+            cursosActivos.ForEach(c => c.Inscripciones.ForEach(i => estudiantes.Add(new Estudiante(){ Nombre=i.Estudiante.Nombre, Apellido=i.Estudiante.Apellido, Inscripciones= new List<Inscripcion>(){i}})));
+            return estudiantes;      
         }
         return null;
     }
 
-    public List<Estudiante> EstudiantesConUnCursoFinalizado()
+    public List<Estudiante> GetEstudiantesConUnCursoFinalizado()
     {
         using(var context = new InstitucionEducativaContext())
         {
-            // List<Estudiante> estudiantesAntiguos= new List<Estudiante>();
-            // List<Curso> cursosTerminados= context.Cursos.Include(c => c.Inscripciones)
-            //     .ThenInclude(i => i.Estudiante)
-            //     .Where(cur => cur.Fecha_finalizacion < DateTime.Now)
-            //     .ToList();
-            // cursosTerminados.ForEach(c => c.Inscripciones.ForEach(i => estudiantesAntiguos.Add(new Estudiante(){ Nombre=i.Estudiante.Nombre, Apellido=i.Estudiante.Apellido, Inscripciones= new List<Inscripcion>(){i}})));
-            // return estudiantesAntiguos;           
+            List<Estudiante> estudiantesAntiguos= new List<Estudiante>();
+            List<Curso> cursosTerminados= context.Cursos.Include(c => c.Inscripciones)
+                .ThenInclude(i => i.Estudiante)
+                .Where(cur => cur.FechaFin  < DateTime.Now)
+                .ToList();
+            cursosTerminados.ForEach(c => c.Inscripciones.ForEach(i => estudiantesAntiguos.Add(new Estudiante(){ Nombre=i.Estudiante.Nombre, Apellido=i.Estudiante.Apellido, Inscripciones= new List<Inscripcion>(){i}})));
+            return estudiantesAntiguos;           
         }
         return null;
     }

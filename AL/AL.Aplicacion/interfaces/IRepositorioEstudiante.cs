@@ -11,7 +11,7 @@ public interface IRepositorioEstudiante
     void AgregarEstudiante(Estudiante estudiante);
 
 
-    List<Estudiante> EstudiantesConUnCursoFinalizado();
+    List<Estudiante> GetEstudiantesConUnCursoFinalizado();
     List<Estudiante> GetEstudiantesCursandoActualmente();
 
 }

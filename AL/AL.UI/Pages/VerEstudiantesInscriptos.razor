@@ -16,21 +16,21 @@
 </tr>
 </thead>
 <tbody>
-@if(_curso.Inscripciones != null)
-{
-    @foreach (var inscripcion in _curso.Inscripciones)
+    @if(_curso.Inscripciones != null)
     {
-        <tr>
-        @if(inscripcion.Estudiante != null)
+        @foreach (var inscripcion in _curso.Inscripciones)
         {
-        <td>@inscripcion.Estudiante.DNI</td>
-        <td>@inscripcion.Estudiante.Nombre</td>
-        <td>@inscripcion.Estudiante.Apellido</td>
-        <td>@inscripcion.Estudiante.Mail</td>
+            <tr>
+            @if(inscripcion.Estudiante != null)
+            {
+            <td>@inscripcion.Estudiante.DNI</td>
+            <td>@inscripcion.Estudiante.Nombre</td>
+            <td>@inscripcion.Estudiante.Apellido</td>
+            <td>@inscripcion.Estudiante.Mail</td>
+            }
+            </tr>
         }
-        </tr>
-     }
-}
+    }
 </tbody>
 </table>
 }

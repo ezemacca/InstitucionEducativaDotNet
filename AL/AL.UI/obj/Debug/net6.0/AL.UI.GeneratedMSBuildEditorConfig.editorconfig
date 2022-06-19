@@ -43,14 +43,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/ListadoEstudiantesCursando.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGFkb0VzdHVkaWFudGVzQ3Vyc2FuZG8ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/ListadoEstudiantesCursoFinalizado.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGFkb0VzdHVkaWFudGVzQ3Vyc29GaW5hbGl6YWRvLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/ezequielmacca/Documents/GitHub/InstitucionEducativaDotNet/AL/AL.UI/Pages/ModificarCurso.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTW9kaWZpY2FyQ3Vyc28ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
