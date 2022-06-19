@@ -3,11 +3,12 @@
 <PageTitle>VerInscripcions</PageTitle>
 
 @inject GetInscripcionesUseCase GetInscripcionesUseCase
-@inject AgregarInscripcionUseCase AgregarInscripcion 
-@inject ModificarInscripcionUseCase ModificarInscripcion 
-@inject EliminarInscripcionUseCase EliminarInscripcion 
-@inject NavigationManager Navegador
+@inject GetInscripcionUseCase GetInscripcionUseCase 
 
+@inject EliminarInscripcionUseCase EliminarInscripcionUseCase
+
+@inject NavigationManager Navegador
+@inject IJSRuntime JsRuntime
 
 <h1>Inscripciones: </h1>
 
@@ -35,7 +36,7 @@
 
                     <td><button class="btn btn-primary" >Ver Inscripcion </button>
                         <button class="btn btn-info">Modificar Inscripcion</button>
-                        <button class="btn btn-danger" >Eliminar Inscripcion</button>
+                        <button class="btn btn-danger" @onclick="()=>eliminarInscripcion(Inscripcion.Id)">Eliminar Inscripcion</button>
                     </td> 
                 </tr>
             } 
@@ -60,5 +61,21 @@
     {
         Navegador.NavigateTo($"agregarInscripcion");
     }
-
+    void eliminarInscripcion()
+    {
+        Navegador.NavigateTo($"agregarInscripcion");
+    }
+     async Task eliminarInscripcion(int id)
+    {
+        var _inscripcionSeleccionado= GetInscripcionUseCase.Ejecutar(id);
+        if(_inscripcionSeleccionado != null)
+        {
+            bool confirmado= await JsRuntime.InvokeAsync<bool>("confirm",$"Esta seguro que desea borrar el estudiante con id {_inscripcionSeleccionado.Id}?");
+            if(confirmado)
+            {
+                EliminarInscripcionUseCase.Ejecutar(id);
+                _inscripciones = GetInscripcionesUseCase.Ejecutar();
+            }
+        }
+    }
 }
