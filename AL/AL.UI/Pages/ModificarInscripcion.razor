@@ -1,0 +1,81 @@
+@page "/modificarInscripcion/{Id:int}"
+
+@inject NavigationManager Navegador
+
+@inject GetInscripcionUseCase GetInscripcionUseCase
+@inject ModificarInscripcionUseCase ModificarInscripcionUseCase
+@inject GetCursosUseCase GetCursosUseCase
+@inject GetCursoUseCase GetCursoUseCase
+@inject GetEstudiantesUseCase GetEstudiantesUseCase
+@inject GetEstudianteUseCase GetEstudianteUseCase
+
+<h2>Modificando inscripción de @_inscripcion.Estudiante?.Nombre @_inscripcion.Estudiante?.Apellido al curso 
+        @_inscripcion.Curso?.Titulo:</h2>
+
+@if (_errorSeleccion)
+{
+    <p class="alert alert-danger">Debe elegir un curso y un estudiante</p>
+}
+
+<label for="estudiante">Elija un estudiante</label>
+<select name="estudiante" aria-placeholder="Seleccionar" @bind="_estudianteSeleccionado" class="form-control" required>
+    
+
+    @foreach (var estudiante in _listaEstudiantes)
+    {
+        <option value="@estudiante.Id"> 
+            <ul>
+                <li>DNI:@estudiante.DNI</li><br>
+                <li>Nombre y apellido: @estudiante.Nombre @estudiante.Apellido</li><br>
+                <li>Email: @estudiante.Mail</li><br>                          
+            </ul> 
+        </option>        
+    }
+</select>
+
+<label for="curso">Elija un curso</label>
+<select name="curso" aria-placeholder="Seleccionar" @bind="_cursoSeleccionado" class="form-control" required>
+    @foreach (var curso in _listaCursos)
+    {
+        <option value="@curso.Id">@curso.Titulo - @curso.Descripcion - @curso.FechaInicio - @curso.FechaFin</option>        
+    }
+</select>
+
+<button class="btn btn-primary" @onclick="Aceptar">Aceptar</button>
+
+@code 
+{
+    Inscripcion _inscripcion= new Inscripcion();
+    int _estudianteSeleccionado= -1;
+    int _cursoSeleccionado= -1;
+    List<Estudiante>? _listaEstudiantes= new List<Estudiante>();
+    List<Curso>? _listaCursos= new List<Curso>();
+    [Parameter] public int? Id { get; set; }
+    bool _errorSeleccion= false;
+
+    protected override void OnInitialized()
+    {
+        _listaEstudiantes= GetEstudiantesUseCase.Ejecutar();
+        _listaCursos= GetCursosUseCase.Ejecutar();
+    }
+    
+    protected override void OnParametersSet()
+    {
+        var inscripcion_hallada = GetInscripcionUseCase.Ejecutar(Id.Value);
+        _inscripcion = inscripcion_hallada; // se recupera una inscripcion para ese id
+    }
+            
+    void Aceptar()
+    {
+        if((_estudianteSeleccionado != -1) && (_cursoSeleccionado != -1))
+        {
+            _inscripcion.EstudianteId= _estudianteSeleccionado;
+            _inscripcion.CursoId= _cursoSeleccionado;
+            ModificarInscripcionUseCase.Ejecutar(_inscripcion);
+            Navegador.NavigateTo($"/VerInscripciones/");
+        }else
+        {
+            _errorSeleccion= true;
+        }
+    }
+}
